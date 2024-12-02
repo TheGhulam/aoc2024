@@ -10,6 +10,7 @@ def fetch_aoc_input(day: int, cookie: str, year: int = 2024) -> str:
     Args:
         day (int): Day number
         cookie (str): Session cookie value
+        year (int): Year (defaults to 2024)
     """
     url = f"https://adventofcode.com/{year}/day/{day}/input"
     
