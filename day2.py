@@ -1,7 +1,7 @@
 import numpy as np
 
 def is_safe_report(report):
-    diff = np.diff(report)
+    diff = np.diff(report) #len(diff) = len(report) - 1
 
     if np.any(diff == 0): return False
     if not np.all((abs(diff) >= 1) & (abs(diff) <= 3)): return False
